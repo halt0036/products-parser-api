@@ -83,8 +83,6 @@ Certifique-se de que você tenha as seguintes ferramentas instaladas em seu sist
    git clone https://github.com/seuusuario/food-facts-api.git
    ```
 
-````
-
 2. Navegue até o diretório do projeto:
 
    ```bash
@@ -141,7 +139,7 @@ Certifique-se de que você tenha as seguintes ferramentas instaladas em seu sist
   ```
 
 - **DELETE** `/products/:code`
-   Altera o status de um produto para "trash" sem removê-lo definitivamente do banco de dados. Útil para manter o histórico e permitir uma possível recuperação.
+  Altera o status de um produto para "trash" sem removê-lo definitivamente do banco de dados. Útil para manter o histórico e permitir uma possível recuperação.
 
   ```bash
   curl -X DELETE http://localhost:3000/products/815360014891
@@ -194,4 +192,3 @@ Para controlar o histórico das importações e facilitar a validação, o proje
 - **Importação Agendada**: Um cron job executa a importação regularmente e registra o histórico.
 
 Para mais informações, consulte o código no diretório `src/services` e `src/cron`.
-````
